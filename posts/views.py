@@ -12,4 +12,4 @@ def home(request):
 
 def blog_page(request):
     posts = Post.objects.all()
-    return render(request, 'posts/blog.html')
+    return render(request, 'posts/blog.html', {'posts': posts})
