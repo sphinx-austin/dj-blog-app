@@ -14,4 +14,4 @@ class Post(models.Model):
     created_at = models.DateTimeField(default=datetime.now, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title + ' | ' + str(self.author)
